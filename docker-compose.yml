@@ -26,6 +26,8 @@ services:
       - ./android_avd:/data
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    devices:
+      - /dev/kvm:/dev/kvm
 
   android-emulator-cuda:
     build:
